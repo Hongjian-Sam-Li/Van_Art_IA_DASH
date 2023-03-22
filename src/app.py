@@ -29,14 +29,20 @@ pa_columns = [
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.layout = dbc.Container([
+    
     dbc.Row([
         dbc.Col([
-            html.H1("Public Art Dashboard")
+            html.H1("Van Art Dashboard")
         ])
     ]),
     dbc.Row([
+            html.P('Explore the Public Arts in Vancouver!'),
+        ]),
+    dbc.Row([
         dbc.Col([
+            html.H4("Select Art Type(s)"),
             dcc.Dropdown(
+                
                 id='type-dropdown',
                 value=Types,
                 options=[{'label': t, 'value': t} for t in Types],
@@ -44,6 +50,7 @@ app.layout = dbc.Container([
             ),
         ]),
         dbc.Col([
+            html.H4("Select Year Range"),
             dcc.RangeSlider(
                 id='year-slider',
                 min=1950,
@@ -56,9 +63,11 @@ app.layout = dbc.Container([
     ]),
     dbc.Row([
         dbc.Col([
+            html.H4("Public Art by Neighborhood"),
             dcc.Graph(id='bar-plot')
         ]),
         dbc.Col([
+            html.H4("Art Information"),
             dash_table.DataTable(
                 id='art-table',
                 columns=pa_columns,
@@ -86,8 +95,7 @@ def update_dashboard(selected_types, year_range):
         neighborhood_counts,
         x='Neighbourhood',
         y='count',
-        labels={'count': 'Number of Arts'},
-        title="Public Art by Neighborhood"
+        labels={'count': 'Number of Arts'}
     )
     table_data = filtered_data[[col['id'] for col in pa_columns]].to_dict('records')
     return bar_plot, table_data
