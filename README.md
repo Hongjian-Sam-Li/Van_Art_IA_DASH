@@ -1,9 +1,16 @@
 # Van_Art_IA_DASH
 
+## View the Dashboard Here:
+
+https://five32-ia-sam.onrender.com/
 
 ## Motivation
 
-Public art is an important aspect of any city as it reflects the culture, history, and values of a community. Vancouver is known for its vibrant and diverse arts scene, and as a result, it has a plethora of public art installations that locals and tourists can explore. However, apart from some well-known museums that gather art collections together, with so many public art installations scattered throughout the city, it can be difficult for tourists to find the art they are interested in. As a result, we want to provide tourists with a centralized location to find information on public art in Vancouver.(From the proposal: https://github.com/UBC-MDS/VanArt/blob/main/reports/proposal.md)
+Public art is an important aspect of any city as it reflects the culture, history, and values of a community. Vancouver is known for its vibrant and diverse arts scene, and as a result, it has a plethora of public art installations that locals and tourists can explore. However, apart from some well-known museums that gather art collections together, with so many public art installations scattered throughout the city, it can be difficult for tourists to find the art they are interested in. As a result, we want to provide tourists with a centralized location to find information on public art in Vancouver.
+
+
+## Link of Proposal:
+https://github.com/UBC-MDS/VanArt/blob/main/reports/proposal.md
 
 ## Information Provided by the App
 
