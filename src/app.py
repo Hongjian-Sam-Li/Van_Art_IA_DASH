@@ -63,7 +63,7 @@ app.layout = dbc.Container([
     ]),
     dbc.Row([
         dbc.Col([
-            html.H4("Public Art by Neighborhood"),
+            html.H4("Public Art by Neighborhood", style={'marginBottom': '0.1rem'}),
             dcc.Graph(id='bar-plot')
         ]),
         dbc.Col([
